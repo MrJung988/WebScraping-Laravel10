@@ -20,14 +20,16 @@ class BlogController extends Controller
         return view('blog.index');
     }
 
-    public function store(Request $request)
+    public function preview(Request $request)
     {
         $request->validate([
-            'image_url' => 'required',
+            'web_url' => 'required',
         ], [
-            'image_url.required' => 'Image url cannot be empty.',
+            'web_url.required' => 'Image url cannot be empty. Please enter a valid website url.',
         ]);
 
-        
+        $data['payload'] = $this->blogRepository->fetchWebsite($request->web_url);
+
+        return view('blog.preview', $data);
     }
 }

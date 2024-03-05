@@ -4,5 +4,5 @@ namespace App\Repositories;
 
 interface BlogRepositoryInterface
 {
-    public function fetchWebThumbnail();
+    public function fetchWebsite($url);
 }

@@ -15,4 +15,4 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', [BlogController::class, 'index'])->name('home');
-Route::post('/blog', [BlogController::class, 'store'])->name('blog.store');
+Route::post('/blog', [BlogController::class, 'preview'])->name('blog.store');
