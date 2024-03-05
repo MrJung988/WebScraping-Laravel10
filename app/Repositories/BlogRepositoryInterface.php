@@ -4,5 +4,5 @@ namespace App\Repositories;
 
 interface BlogRepositoryInterface
 {
-    // Add your methods here
+    public function fetchWebThumbnail();
 }
