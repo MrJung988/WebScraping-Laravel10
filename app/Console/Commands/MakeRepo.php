@@ -35,11 +35,11 @@ class MakeRepo extends Command
         $name = $this->argument('name') . 'Repository';
 
         if (File::exists(app_path("Repositories/{$name}.php")) || File::exists(app_path("Repositories/{$name}Interface.php"))) {
-            $this->error("🚫 Whoa, Skybase cadet! Looks like '{$name}' or '{$name}Interface' is already soaring. Choose another name to lift off!");
+            $this->error("🚫 Whoa, Samir cadet! Looks like '{$name}' or '{$name}Interface' is already soaring. Choose another name to lift off!");
             return;
         }
 
-        $this->info("🚀 Preparing for Skybase lift-off! Initiating repository and interface creation...");
+        $this->info("🚀 Preparing for Samir lift-off! Initiating repository and interface creation...");
 
         $this->createInterface($name);
         $this->info("🌈 Sky's the limit! {$name}Interface.php is now airborne!");
@@ -47,7 +47,7 @@ class MakeRepo extends Command
         $this->createImplementation($name);
         $this->info("🌠 Shooting star! {$name}.php is now in orbit!");
 
-        $this->info("🛰️ Skybase mission complete! Your repository and interface are ready to explore new heights!");
+        $this->info("🛰️ Samir mission complete! Your repository and interface are ready to explore new heights!");
     }
 
     protected function createInterface($name)

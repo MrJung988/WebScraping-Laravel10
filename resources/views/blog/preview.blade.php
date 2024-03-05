@@ -12,7 +12,7 @@
                         <p class="text-end text-muted small text-capitalize">Source: {{ $payload['providerName'] }}</p>
                     </div>
                     <h5 class="card-title">{{ $payload['title'] }}</h5>
-                    <p class="card-text">{{ $payload['description'] }}</p>
+                    <p class="card-text text-muted">{{ $payload['description'] }}</p>
                     <a href="{{ route('home') }}" class="btn btn-primary w-100">Go Back</a>
                 </div>
             </div>
