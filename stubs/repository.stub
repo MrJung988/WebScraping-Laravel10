@@ -1,0 +1,10 @@
+<?php
+
+namespace App\Repositories;
+
+use App\Repositories\{{name}}Interface;
+
+class {{name}} implements {{name}}Interface
+{
+    // Implement your methods here
+}
